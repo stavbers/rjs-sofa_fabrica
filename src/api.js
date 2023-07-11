@@ -5,7 +5,7 @@ const getHomePage = async () => {
     return await resp.json();
 };
 const getSinglePage = async (name = '') => {
-  const resp = await fetch(`${API_URL}/${name}`);
+  const resp = await fetch(`${API_URL}${name}`);
   return await resp.json();
 };
 
